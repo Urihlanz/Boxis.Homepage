@@ -1,0 +1,9 @@
+export { default as Examples } from './Examples';
+export { default as Features } from './Features';
+export { default as Footer } from './Footer';
+export { default as Greeting } from './Greeting';
+export { default as Header } from './Header';
+export { default as Reviews } from './Reviews';
+export { default as Tariffs } from './Tariffs';
+export { default as TotalCreated } from './TotalCreated';
+export { default as Video } from './Video';
