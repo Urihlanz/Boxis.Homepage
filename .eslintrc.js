@@ -2,7 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true
+    node: true,
   },
   extends: [
     'eslint:recommended',
@@ -12,14 +12,15 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'next/core-web-vitals',
+    'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 2018,
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   overrides: [
     {
@@ -27,13 +28,9 @@ module.exports = {
       parserOptions: {
         project: ['./tsconfig.json'],
       },
-    }
+    },
   ],
-  plugins: [
-    'react',
-    'react-hooks',
-    '@typescript-eslint',
-  ],
+  plugins: ['react', 'react-hooks', '@typescript-eslint', 'simple-import-sort'],
   rules: {
     '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/no-unsafe-member-access': 0,
@@ -48,19 +45,11 @@ module.exports = {
     'no-undef': 1,
     'no-console': 1,
     'newline-before-return': 2,
-    'indent': [
-      'error',
-      2,
-      { 'SwitchCase': 1 }
-    ],
+    indent: ['error', 2, { SwitchCase: 1 }],
     'linebreak-style': 0,
-    'quotes': [
-      'error',
-      'single'
-    ],
-    'semi': [
-      'error',
-      'always'
-    ]
-  }
+    quotes: ['error', 'single'],
+    semi: ['error', 'always'],
+    '@next/next/no-document-import-in-page': 'off',
+    'simple-import-sort/imports': 'error',
+  },
 };
