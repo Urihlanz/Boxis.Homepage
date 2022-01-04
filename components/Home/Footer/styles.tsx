@@ -1,3 +1,4 @@
+import { Button } from 'boxis-uikit';
 import styled from 'styled-components';
 
 import { NavLink } from '../Navigation/Item/styles';
@@ -44,18 +45,10 @@ export const NavbarWrapper = styled.div`
   }
 `;
 
-export const CreateSiteButton = styled.button`
+export const CreateSiteButton = styled(Button)`
   height: 48px;
   padding: 0 32px;
-  border-radius: 14px;
-  color: #fff;
   font-size: 14px;
-  cursor: pointer;
-  background: linear-gradient(
-    133deg,
-    rgba(163, 54, 109, 1) 0%,
-    rgba(244, 87, 111, 1) 65%
-  );
 
   @media (max-width: 900px) {
     margin-top: 34px;
