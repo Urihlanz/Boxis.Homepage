@@ -17,6 +17,10 @@ export const RegistrationForm = styled(Form)`
 export const FormInput = styled(FormItem)`
   width: 100%;
   margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;
 
 export const Disclaimer = styled.div`
@@ -27,7 +31,6 @@ export const Disclaimer = styled.div`
   text-align: center;
   color: #787878;
   margin-bottom: 24px;
-  margin-top: -2px;
   font-weight: 400;
 `;
 
@@ -35,4 +38,9 @@ export const RegistrationButton = styled(Button)`
   @media (max-width: 385px) {
     padding: 0 20px;
   }
+`;
+
+export const InputWrapper = styled.div`
+  max-width: 100%;
+  padding-bottom: 22px;
 `;

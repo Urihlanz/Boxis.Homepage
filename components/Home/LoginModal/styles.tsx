@@ -15,6 +15,10 @@ export const LoginForm = styled(Form)`
 export const FormInput = styled(FormItem)`
   width: 100%;
   margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;
 
 export const PasswordRecovery = styled.a`
@@ -25,5 +29,9 @@ export const PasswordRecovery = styled.a`
   margin-bottom: 32px;
   text-align: right;
   width: 100%;
-  margin-top: -11px;
+`;
+
+export const InputWrapper = styled.div`
+  max-width: 100%;
+  padding-bottom: 11px;
 `;
