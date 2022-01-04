@@ -1,3 +1,4 @@
+import { Button } from 'boxis-uikit';
 import styled from 'styled-components';
 
 import BackgroundGrid from './BackgroundGrid';
@@ -79,18 +80,10 @@ export const Subtitle = styled.h2`
   }
 `;
 
-export const CreateSiteButton = styled.button`
+export const CreateSiteButton = styled(Button)`
   height: 64px;
   padding: 0 48px;
-  border-radius: 14px;
-  color: #fff;
   font-size: 19px;
-  cursor: pointer;
-  background: linear-gradient(
-    133deg,
-    rgba(163, 54, 109, 1) 0%,
-    rgba(244, 87, 111, 1) 65%
-  );
 
   @media (max-width: 1030px) {
     height: 48px;

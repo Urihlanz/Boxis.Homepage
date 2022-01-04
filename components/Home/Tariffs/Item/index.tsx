@@ -57,7 +57,7 @@ const Card: React.FC<Props> = ({
         <InactiveFeature key={index}>{feature}</InactiveFeature>
       ))}
     </Features>
-    <SelectButton>Выбрать</SelectButton>
+    <SelectButton size='lg'>Выбрать</SelectButton>
   </Wrapper>
 );
 

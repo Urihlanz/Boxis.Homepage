@@ -1,3 +1,4 @@
+import { Button } from 'boxis-uikit';
 import styled from 'styled-components';
 
 import Logo from '../Logo';
@@ -13,7 +14,7 @@ export const Wrapper = styled.header`
   height: 100px;
   width: 100%;
   border-bottom: 2px rgba(0, 0, 0, 0.1) solid;
-  z-index: 1000;
+  z-index: 10;
 
   @media (max-width: 930px) {
     height: 65px;
@@ -53,40 +54,25 @@ export const BurgerMenuIcon = styled(BurgerIcon)`
   }
 `;
 
-export const AuthButton = styled.button`
+export const RegistrationButton = styled.button`
+  background: none;
   font-size: 16px;
   margin-right: 36px;
   cursor: pointer;
 
   @media (max-width: 930px) {
+    margin-right: 11px;
     font-size: 12px;
   }
 `;
 
-export const RegistrationButton = styled(AuthButton)`
-  background: none;
-
-  @media (max-width: 930px) {
-    margin-right: 11px;
-  }
-`;
-
-export const LoginButton = styled(AuthButton)`
-  height: 35px;
-  border-radius: 8px;
-  padding: 0 28px;
-  margin-right: 0;
-  color: #fff;
-  background: rgb(163, 54, 109);
-  background: linear-gradient(
-    133deg,
-    rgba(163, 54, 109, 1) 0%,
-    rgba(244, 87, 111, 1) 65%
-  );
+export const LoginButton = styled(Button)`
+  font-size: 16px;
 
   @media (max-width: 930px) {
     padding: 0 16px;
     height: 26px;
     margin-right: 14px;
+    font-size: 12px;
   }
 `;

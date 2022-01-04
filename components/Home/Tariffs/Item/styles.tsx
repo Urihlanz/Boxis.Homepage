@@ -1,3 +1,4 @@
+import { Button } from 'boxis-uikit';
 import styled from 'styled-components';
 
 import Check from './Check';
@@ -126,18 +127,10 @@ export const InactiveFeature = styled(Feature)`
   color: #ababab;
 `;
 
-export const SelectButton = styled.button`
+export const SelectButton = styled(Button)`
   height: 64px;
   padding: 0 73px;
-  border-radius: 14px;
-  color: #fff;
   font-size: 16px;
-  cursor: pointer;
-  background: linear-gradient(
-    133deg,
-    rgba(163, 54, 109, 1) 0%,
-    rgba(244, 87, 111, 1) 65%
-  );
   margin-top: 21px;
 
   @media (max-width: 1270px) {

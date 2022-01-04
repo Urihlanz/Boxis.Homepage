@@ -1,3 +1,4 @@
+import { Button } from 'boxis-uikit';
 import styled from 'styled-components';
 
 import { Container as MainContainer } from '../styles';
@@ -72,19 +73,11 @@ export const Subtitle = styled.h2`
   }
 `;
 
-export const CreateSiteButton = styled.button`
-  height: 65px;
-  padding: 0 50px;
+export const CreateSiteButton = styled(Button)`
+  height: 64px;
+  padding: 0 48px;
   margin-bottom: 60px;
-  border-radius: 16px;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-  background: linear-gradient(
-    133deg,
-    rgba(163, 54, 109, 1) 0%,
-    rgba(244, 87, 111, 1) 65%
-  );
+  font-size: 19px;
 
   @media (max-width: 930px) {
     height: 50px;
@@ -103,7 +96,7 @@ export const Picture = styled.div`
   position: relative;
   width: 43%;
   height: 100%;
-  z-index: 20;
+  z-index: 9;
 
   @media (max-width: 930px) {
     width: 100%;
