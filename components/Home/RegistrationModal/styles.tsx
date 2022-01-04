@@ -42,5 +42,5 @@ export const RegistrationButton = styled(Button)`
 
 export const InputWrapper = styled.div`
   max-width: 100%;
-  padding-bottom: 22px;
+  margin-bottom: 22px;
 `;

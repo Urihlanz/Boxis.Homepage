@@ -33,5 +33,5 @@ export const PasswordRecovery = styled.a`
 
 export const InputWrapper = styled.div`
   max-width: 100%;
-  padding-bottom: 11px;
+  margin-bottom: 11px;
 `;
