@@ -1,4 +1,4 @@
-import { Form, FormItem, Modal } from 'boxis-uikit';
+import { Button, Form, FormItem, Modal } from 'boxis-uikit';
 import styled from 'styled-components';
 
 export const LoginModalWindow = styled(Modal)``;
@@ -29,4 +29,10 @@ export const Disclaimer = styled.div`
   margin-bottom: 24px;
   margin-top: -2px;
   font-weight: 400;
+`;
+
+export const RegistrationButton = styled(Button)`
+  @media (max-width: 385px) {
+    padding: 0 20px;
+  }
 `;

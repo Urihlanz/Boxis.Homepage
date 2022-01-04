@@ -2,11 +2,8 @@ import { Button, Input, Modal, ModalProps, ValidationRule } from 'boxis-uikit';
 import React from 'react';
 
 import { FormInput, LoginForm, PasswordRecovery, Title } from './styles';
-// import VisiblePasswordIcon from './VisiblePasswordIcon';
 
 const LoginModal: React.FC<ModalProps> = ({ isShow, onClose }) => {
-  // const [passwordType, setPasswordType] = useState(false);
-
   return (
     <Modal isShow={isShow} onClose={onClose}>
       <LoginForm
@@ -39,11 +36,6 @@ const LoginModal: React.FC<ModalProps> = ({ isShow, onClose }) => {
           size='lg'
           name='password'
           placeholder='Введите пароль'
-          // icon={
-          //   <VisiblePasswordIcon
-          //     onClick={() => setPasswordType(!passwordType)}
-          //   />
-          // }
           validation={[
             {
               rule: ValidationRule.Required,

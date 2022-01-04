@@ -1,12 +1,15 @@
-import { Button, Input, Modal, ModalProps, ValidationRule } from 'boxis-uikit';
+import { Input, Modal, ModalProps, ValidationRule } from 'boxis-uikit';
 import React from 'react';
 
-import { Disclaimer, FormInput, RegistrationForm, Title } from './styles';
-// import VisiblePasswordIcon from './VisiblePasswordIcon';
+import {
+  Disclaimer,
+  FormInput,
+  RegistrationButton,
+  RegistrationForm,
+  Title,
+} from './styles';
 
 const RegistrationModal: React.FC<ModalProps> = ({ isShow, onClose }) => {
-  // const [passwordType, setPasswordType] = useState(false);
-
   return (
     <Modal onClose={onClose} isShow={isShow}>
       <RegistrationForm
@@ -60,9 +63,9 @@ const RegistrationModal: React.FC<ModalProps> = ({ isShow, onClose }) => {
           Нажимая кнопку «Зарегистрироваться», Вы принимаете условия
           Пользовательского соглашения.
         </Disclaimer>
-        <Button size='lg' type='submit'>
+        <RegistrationButton size='lg' type='submit'>
           Зарегистрироваться
-        </Button>
+        </RegistrationButton>
       </RegistrationForm>
     </Modal>
   );

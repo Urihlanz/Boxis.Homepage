@@ -23,7 +23,7 @@ export const PasswordRecovery = styled.a`
   font-weight: 400;
   color: #1e1e1e;
   margin-bottom: 32px;
-  text-align: end;
+  text-align: right;
   width: 100%;
   margin-top: -11px;
 `;
