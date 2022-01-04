@@ -99,7 +99,7 @@ const Examples: React.FC = () => {
         <Info>
           <Title>Примеры работ на конструкторе</Title>
           <Subtitle>Посмотрите, как другие используют конструктор</Subtitle>
-          <CreateSiteButton>Создать сайт</CreateSiteButton>
+          <CreateSiteButton size='lg'>Создать сайт</CreateSiteButton>
         </Info>
       </Container>
     </Wrapper>

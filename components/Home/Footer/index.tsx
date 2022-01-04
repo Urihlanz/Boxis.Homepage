@@ -25,7 +25,7 @@ const Footer: React.FC = () => (
       <NavbarWrapper>
         <Logo width={127} height={35} light={true} />
         <Navigation hasBurgerMenu={true} />
-        <CreateSiteButton>Создать сайт</CreateSiteButton>
+        <CreateSiteButton size='md'>Создать сайт</CreateSiteButton>
       </NavbarWrapper>
       <LinksRow>
         <Copyright>с 2020 Все права защищены</Copyright>

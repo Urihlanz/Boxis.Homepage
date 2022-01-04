@@ -26,7 +26,7 @@ const Header: React.FC = () => {
         <Navigation hasBurgerMenu={false} />
         <ButtonsRow>
           <RegistrationButton>Регистрация</RegistrationButton>
-          <LoginButton>Вход</LoginButton>
+          <LoginButton size='sm'>Вход</LoginButton>
           <BurgerMenuIcon width={24} height={24} onClick={handleClick} />
         </ButtonsRow>
       </Container>
