@@ -9,6 +9,8 @@ RUN npm install
 
 COPY . /var/www/boxis
 
+RUN npm run build
+
 EXPOSE 80/tcp 443/tcp
 
 CMD "npm" "start"
