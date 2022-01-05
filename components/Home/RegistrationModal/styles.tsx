@@ -35,6 +35,8 @@ export const Disclaimer = styled.div`
 `;
 
 export const RegistrationButton = styled(Button)`
+  margin-bottom: 24px;
+
   @media (max-width: 385px) {
     padding: 0 20px;
   }
@@ -43,4 +45,28 @@ export const RegistrationButton = styled(Button)`
 export const InputWrapper = styled.div`
   max-width: 100%;
   margin-bottom: 22px;
+`;
+
+export const SwitchToLogin = styled.div`
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+`;
+
+export const SwitchToLoginText = styled.p`
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: center;
+  color: #787878;
+  font-weight: 400;
+  margin-right: 3px;
+`;
+
+export const SwitchToLoginButton = styled.a`
+  font-family: Roboto;
+  font-size: 14px;
+  color: #000;
+  text-decoration: underline;
+  font-weight: 400;
+  cursor: pointer;
 `;

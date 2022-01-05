@@ -55,10 +55,15 @@ const Header: React.FC = () => {
         </ButtonsRow>
       </Container>
       <BurgerMenu isShow={isShow} />
-      <LoginModal isShow={isShowLoginModal} onClose={onCloseLoginModal} />
+      <LoginModal
+        isShow={isShowLoginModal}
+        onClose={onCloseLoginModal}
+        onSwitch={onOpenRegistrationModal}
+      />
       <RegistrationModal
         isShow={isShowRegistrationModal}
         onClose={onCloseRegistrationModal}
+        onSwitch={onOpenLoginModal}
       />
     </Wrapper>
   );

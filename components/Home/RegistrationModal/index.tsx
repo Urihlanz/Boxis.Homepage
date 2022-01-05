@@ -1,4 +1,4 @@
-import { Input, Modal, ModalProps, ValidationRule } from 'boxis-uikit';
+import { Input, Modal, ValidationRule } from 'boxis-uikit';
 import React from 'react';
 
 import {
@@ -7,10 +7,19 @@ import {
   InputWrapper,
   RegistrationButton,
   RegistrationForm,
+  SwitchToLogin,
+  SwitchToLoginButton,
+  SwitchToLoginText,
   Title,
 } from './styles';
 
-const RegistrationModal: React.FC<ModalProps> = ({ isShow, onClose }) => {
+type Props = {
+  onSwitch: () => void;
+  isShow: boolean;
+  onClose: () => void;
+};
+
+const RegistrationModal: React.FC<Props> = ({ isShow, onClose, onSwitch }) => {
   return (
     <Modal onClose={onClose} isShow={isShow}>
       <RegistrationForm
@@ -69,6 +78,17 @@ const RegistrationModal: React.FC<ModalProps> = ({ isShow, onClose }) => {
         <RegistrationButton size='lg' type='submit'>
           Зарегистрироваться
         </RegistrationButton>
+        <SwitchToLogin>
+          <SwitchToLoginText>Уже зарегистрированы?</SwitchToLoginText>
+          <SwitchToLoginButton
+            onClick={() => {
+              onClose();
+              onSwitch();
+            }}
+          >
+            Войти тут
+          </SwitchToLoginButton>
+        </SwitchToLogin>
       </RegistrationForm>
     </Modal>
   );

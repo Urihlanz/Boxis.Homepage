@@ -4,12 +4,22 @@ import React from 'react';
 import {
   FormInput,
   InputWrapper,
+  LoginButton,
   LoginForm,
   PasswordRecovery,
+  SwitchToRegistration,
+  SwitchToRegistrationButton,
+  SwitchToRegistrationText,
   Title,
 } from './styles';
 
-const LoginModal: React.FC<ModalProps> = ({ isShow, onClose }) => {
+type Props = {
+  onSwitch: () => void;
+  isShow: boolean;
+  onClose: () => void;
+};
+
+const LoginModal: React.FC<Props> = ({ isShow, onClose, onSwitch }) => {
   return (
     <Modal isShow={isShow} onClose={onClose}>
       <LoginForm
@@ -62,9 +72,22 @@ const LoginModal: React.FC<ModalProps> = ({ isShow, onClose }) => {
           />
         </InputWrapper>
         <PasswordRecovery href='#'>Забыли пароль?</PasswordRecovery>
-        <Button size='lg' type='submit'>
+        <LoginButton size='lg' type='submit'>
           Войти
-        </Button>
+        </LoginButton>
+        <SwitchToRegistration>
+          <SwitchToRegistrationText>
+            Не зарегистрированы?
+          </SwitchToRegistrationText>
+          <SwitchToRegistrationButton
+            onClick={() => {
+              onClose();
+              onSwitch();
+            }}
+          >
+            Зарегистрироваться
+          </SwitchToRegistrationButton>
+        </SwitchToRegistration>
       </LoginForm>
     </Modal>
   );
