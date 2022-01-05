@@ -1,13 +1,42 @@
 module.exports = {
-  presets: ['next/babel'],
   plugins: [
+    '@babel/plugin-proposal-class-properties',
+    '@babel/plugin-syntax-dynamic-import',
+    '@babel/plugin-proposal-optional-chaining',
     [
-      'styled-components',
+      '@babel/plugin-transform-runtime',
       {
-        ssr: true,
-        displayName: true,
-        preprocess: false,
+        regenerator: false,
       },
     ],
+    [
+      '@babel/plugin-proposal-object-rest-spread',
+      {
+        useBuiltIns: 'usage',
+      },
+    ],
+    [
+      'babel-plugin-styled-components',
+      {
+        ssr: false,
+        displayName: process.env.NODE_ENV === 'development',
+      }
+    ],
   ],
+  presets: [
+    [
+      '@babel/preset-typescript',
+      {
+        isTSX: true,
+        allExtensions: true,
+      },
+    ],
+    [
+      '@babel/preset-react',
+      {
+        useBuiltIns: 'usage',
+      },
+    ],
+    ['@babel/preset-env'],
+  ]
 };
