@@ -5,11 +5,11 @@ import { NavLink } from './styles';
 type Props = {
   title: string;
   link: string;
-  hasBurgerMenu?: boolean;
+  stackedMenu?: boolean;
 };
 
-const Item: React.FC<Props> = ({ title, link, hasBurgerMenu = false }) => (
-  <NavLink hasBurgerMenu={hasBurgerMenu} href={link}>
+const Item: React.FC<Props> = ({ title, link, stackedMenu = false }) => (
+  <NavLink stackedMenu={stackedMenu} href={link}>
     {title}
   </NavLink>
 );

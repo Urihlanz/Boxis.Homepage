@@ -24,7 +24,7 @@ const Footer: React.FC = () => (
     <Container>
       <NavbarWrapper>
         <Logo width={127} height={35} light={true} />
-        <Navigation hasBurgerMenu={true} />
+        <Navigation stackedMenu={true} />
         <CreateSiteButton size='md'>Создать сайт</CreateSiteButton>
       </NavbarWrapper>
       <LinksRow>

@@ -9,7 +9,7 @@ type Props = {
 
 const BurgerMenu: React.FC<Props> = ({ isShow }) => (
   <Wrapper isShow={isShow}>
-    <Navigation hasBurgerMenu={true} />
+    <Navigation stackedMenu={true} />
   </Wrapper>
 );
 

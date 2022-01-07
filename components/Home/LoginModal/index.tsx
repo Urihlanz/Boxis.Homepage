@@ -1,4 +1,4 @@
-import { Button, Input, Modal, ModalProps, ValidationRule } from 'boxis-uikit';
+import { Input, Modal, ValidationRule } from 'boxis-uikit';
 import React from 'react';
 
 import {

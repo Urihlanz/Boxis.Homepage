@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const NavLink = styled.a<{ hasBurgerMenu: boolean }>`
+export const NavLink = styled.a<{ stackedMenu: boolean }>`
   color: #1e1e1e;
   margin-right: 50px;
 
@@ -9,8 +9,8 @@ export const NavLink = styled.a<{ hasBurgerMenu: boolean }>`
   }
 
   ${(props) =>
-    props.hasBurgerMenu
-      ? `@media (max-width: 900px) {
+    props.stackedMenu
+      ? `@media (max-width: 930px) {
         margin-bottom: 16px;
         color: #fff;
 

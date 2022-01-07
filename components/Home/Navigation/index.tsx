@@ -4,7 +4,7 @@ import Item from './Item';
 import { Navbar } from './styles';
 
 type Props = {
-  hasBurgerMenu?: boolean;
+  stackedMenu?: boolean;
 };
 
 const links = [
@@ -26,14 +26,14 @@ const links = [
   },
 ];
 
-const Navigation: React.FC<Props> = ({ hasBurgerMenu = false }) => (
-  <Navbar hasBurgerMenu={hasBurgerMenu}>
+const Navigation: React.FC<Props> = ({ stackedMenu = false }) => (
+  <Navbar stackedMenu={stackedMenu}>
     {links.map((props, index) => (
       <Item
         key={index}
         link={props.link}
         title={props.title}
-        hasBurgerMenu={hasBurgerMenu}
+        stackedMenu={stackedMenu}
       />
     ))}
   </Navbar>

@@ -43,7 +43,7 @@ const Header: React.FC = () => {
     <Wrapper>
       <Container>
         <StyledLogo width={127} height={35} />
-        <Navigation hasBurgerMenu={false} />
+        <Navigation />
         <ButtonsRow>
           <RegistrationButton onClick={onOpenRegistrationModal}>
             Регистрация
