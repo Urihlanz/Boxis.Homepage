@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import { Image } from '../styles';
 import LaptopMan from './images/laptopMan.png';
@@ -25,11 +26,15 @@ const Greeting: React.FC = () => (
   <Wrapper>
     <Container>
       <Info>
-        <Title>Конструктор сайтов с полной интеграцией Instagram</Title>
+        <Title>
+          <FormattedMessage id='greeting.title' />
+        </Title>
         <Subtitle>
           Создайте простой интернет-магазин на основе Instagram
         </Subtitle>
-        <CreateSiteButton>Создать сайт</CreateSiteButton>
+        <CreateSiteButton>
+          <FormattedMessage id='button.create_site' />
+        </CreateSiteButton>
         <TrustUsBlock />
       </Info>
       <Picture>
