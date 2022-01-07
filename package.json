@@ -12,11 +12,12 @@
   },
   "author": "Maxim Serebryakov <starkmp.work@gmail.com>",
   "dependencies": {
+    "boxis-uikit": "^1.2.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-intl": "^5.24.1",
     "styled-components": "^5.3.3",
-    "swiper": "^7.2.0",
-    "boxis-uikit": "^1.2.4"
+    "swiper": "^7.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",

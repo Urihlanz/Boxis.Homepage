@@ -1,6 +1,6 @@
 import './styles/globals.scss';
 
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import {
   Examples,
@@ -14,10 +14,11 @@ import {
   Video,
 } from './components';
 import { Main } from './components/styles';
+import { LocaleProvider } from './context/Locale';
 
 const App: React.FC = () => {
   return (
-    <Fragment>
+    <LocaleProvider>
       <Header />
       <Main>
         <Greeting />
@@ -29,7 +30,7 @@ const App: React.FC = () => {
         <Reviews />
       </Main>
       <Footer />
-    </Fragment>
+    </LocaleProvider>
   );
 };
 

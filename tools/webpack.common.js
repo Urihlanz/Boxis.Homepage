@@ -36,7 +36,7 @@ module.exports = {
   output: {
     filename: '[name].[contenthash:8].js',
     path: path.resolve(__dirname, '../dist'),
-    assetModuleFilename: 'assets/[contenthash:8].[ext]',
+    assetModuleFilename: 'assets/[contenthash:8][ext]',
   },
   plugins: [
     new HTMLWebpackPlugin({
