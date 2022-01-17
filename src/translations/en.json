@@ -1,4 +1,6 @@
 {
   "greeting.title": "Site consctuctor with fully instagram integration",
-  "button.create_site": "Create site"
+  "button.create_site": "Create site",
+  "button.registration": "Sign Up",
+  "button.login": "Sign In"
 }

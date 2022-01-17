@@ -1,4 +1,24 @@
 {
+  "validation.fill_required": "Заполните обязательное поле!",
+  "validation.wrong_email": "Некорректный email",
+  "validation.max_length": "Длина не может быть больше {count} символов!",
+  "validation.min_length": "Длина не может быть меньше {count} символов!",
   "greeting.title": "Конструктор сайтов с полной интеграцией Instagram",
-  "button.create_site": "Создать сайт"
+  "button.create_site": "Создать сайт",
+  "button.registration": "Регистрация",
+  "button.login": "Войти",
+  "login_modal.title": "Войти",
+  "login_modal.password_recovery": "Забыли пароль?",
+  "login_modal.submit_button": "Войти",
+  "login_modal.switch_to_registration.text": "Не зарегистрированы?",
+  "login_modal.switch_to_registration.button": "Зарегистрироваться",
+  "login_modal.email_input.placeholder": "Введите Email",
+  "login_modal.password_input.placeholder": "Введите пароль",
+  "registration_modal.title": "Регистрация",
+  "registration_modal.disclaimer": "Нажимая кнопку «Зарегистрироваться», Вы принимаете условия Пользовательского соглашения.",
+  "registration_modal.switch_to_login.text": "Уже зарегистрированы?",
+  "registration_modal.switch_to_login.button": "Войти тут",
+  "registration_modal.registration_button": "Зарегистрироваться",
+  "registration_modal.email_input.placeholder": "Введите Email",
+  "registration_modal.password_input.placeholder": "Введите пароль"
 }

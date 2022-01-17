@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { overrideStyled } from '../../utils/styled';
 import Logo from '../Logo';
+import { Navbar } from '../Navigation/styles';
 import { Container as MainContainer } from '../styles';
 import BurgerIcon from './BurgerIcon';
 
@@ -28,6 +29,12 @@ export const Container = styled(MainContainer)`
   align-items: center;
   justify-content: space-between;
 
+  ${Navbar} {
+    @media (max-width: 930px) {
+      display: none;
+    }
+  }
+
   .header-logo {
     @media (max-width: 930px) {
       width: 70px;
@@ -45,6 +52,7 @@ export const StyledLogo = styled(Logo)`
 
 export const ButtonsRow = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 export const BurgerMenuIcon = styled(BurgerIcon)`
@@ -55,15 +63,18 @@ export const BurgerMenuIcon = styled(BurgerIcon)`
   }
 `;
 
-export const RegistrationButton = styled.button`
-  background: none;
+export const RegistrationButton = overrideStyled(Button)`
   font-size: 16px;
-  margin-right: 36px;
-  cursor: pointer;
+
+  &:hover {
+    color: #1E1E1E;
+  }
 
   @media (max-width: 930px) {
     margin-right: 11px;
     font-size: 12px;
+    height: 26px;
+    padding: 0;
   }
 `;
 
