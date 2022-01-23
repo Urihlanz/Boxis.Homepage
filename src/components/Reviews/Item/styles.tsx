@@ -75,7 +75,7 @@ export const CreationDate = styled.p`
 
 export const Body = styled.p`
   font-size: 18px;
-  line-height: 27px;
+  line-height: 24px;
   overflow: hidden;
 
   @media (max-width: 1040px) {
