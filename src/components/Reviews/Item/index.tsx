@@ -34,7 +34,7 @@ const Item: React.FC<Props> = ({ userAvatar, userName, date, text }) => (
         <CreationDate>{date}</CreationDate>
       </PersonInfo>
     </Header>
-    <Body>{text}</Body>
+    <Body>“{text}”</Body>
   </Wrapper>
 );
 

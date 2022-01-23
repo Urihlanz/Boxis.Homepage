@@ -30,7 +30,7 @@ const Greeting: React.FC = () => (
           <FormattedMessage id='greeting.title' />
         </Title>
         <Subtitle>
-          Создайте простой интернет-магазин на основе Instagram
+          <FormattedMessage id='greeting.subtitle' />
         </Subtitle>
         <CreateSiteButton>
           <FormattedMessage id='button.create_site' />
@@ -45,7 +45,6 @@ const Greeting: React.FC = () => (
           <StyledInstagramIcon width={80} height={80} />
         </PictureSquareTop>
         <PictureManLaptop>
-          {/* <Image layout='fill' src={LaptopMan} alt='Man with laptop' /> */}
           <Image
             src={LaptopMan}
             alt='Man with laptop'

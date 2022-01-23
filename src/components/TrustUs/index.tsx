@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import { Image } from '../styles';
 import PeopleCircles from './images/peopleCircles.png';
@@ -6,7 +7,9 @@ import { CounterValue, CounterWrapper, Title, Wrapper } from './styled';
 
 const TrustUs: React.FC<{ className?: string }> = ({ className }) => (
   <Wrapper className={className}>
-    <Title>Нам доверяют</Title>
+    <Title>
+      <FormattedMessage id='trust_us.title' />
+    </Title>
     <CounterWrapper>
       <Image
         width='128px'
