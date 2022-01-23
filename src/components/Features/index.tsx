@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Image } from '../styles';
 import AutoOrderIcon from './AutoOrderIcon';
-import ExampleSite from './images/exampleSite.jpg';
+import ExampleSite from './images/exampleSite.png';
 import OnlinePayIcon from './OnlinePayIcon';
 import PieChartIcon from './PieChartIcon';
 import SafetyIcon from './SafetyIcon';
