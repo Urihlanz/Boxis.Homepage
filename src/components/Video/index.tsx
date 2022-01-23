@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import {
   Container,
@@ -22,9 +23,11 @@ const Video: React.FC = () => {
     <Wrapper>
       <Container>
         <Text>
-          <Title>Видео о конструкторе</Title>
+          <Title>
+            <FormattedMessage id='video.title' />
+          </Title>
           <Subtitle>
-            Начните принимать заказы уже через несколько минут после регистрации
+            <FormattedMessage id='video.subtitle' />
           </Subtitle>
         </Text>
         <VideoBlock>
@@ -42,7 +45,9 @@ const Video: React.FC = () => {
                 <PlayButton>
                   <PlayTriangle />
                 </PlayButton>
-                <OverlayText>Смотреть видео о конструкторе</OverlayText>
+                <OverlayText>
+                  <FormattedMessage id='video.overlay.text' />
+                </OverlayText>
               </VideoOverlay>
             )}
           </VideoInner>

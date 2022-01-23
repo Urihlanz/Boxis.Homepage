@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import { Image } from '../styles';
 import ConstructortIcon from './ConstructorIcon';
@@ -20,7 +21,9 @@ const TotalCreated: React.FC = () => (
         <ConstructorIconSquare>
           <ConstructortIcon width='30' height='30' />
         </ConstructorIconSquare>
-        <Title>Создано сайтов на нашем конструкторе</Title>
+        <Title>
+          <FormattedMessage id='total_created.title' />
+        </Title>
         <Value>432305</Value>
       </Content>
       <ImageBlock>

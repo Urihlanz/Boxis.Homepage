@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import { Image } from '../styles';
 import SiteExample from './images/example.png';
@@ -78,26 +79,32 @@ const Examples: React.FC = () => {
               isActive={category === Categories.Business}
               onClick={() => setCategory(Categories.Business)}
             >
-              Бизнес
+              <FormattedMessage id='examples.slide_button.1' />
             </SlideButton>
             <SlideButton
               isActive={category === Categories.Shop}
               onClick={() => setCategory(Categories.Shop)}
             >
-              Магазины
+              <FormattedMessage id='examples.slide_button.2' />
             </SlideButton>
             <SlideButton
               isActive={category === Categories.More}
               onClick={() => setCategory(Categories.More)}
             >
-              Другие
+              <FormattedMessage id='examples.slide_button.3' />
             </SlideButton>
           </ButtonsRow>
         </LaptopBlock>
         <Info>
-          <Title>Примеры работ на конструкторе</Title>
-          <Subtitle>Посмотрите, как другие используют конструктор</Subtitle>
-          <CreateSiteButton size='lg'>Создать сайт</CreateSiteButton>
+          <Title>
+            <FormattedMessage id='examples.title' />
+          </Title>
+          <Subtitle>
+            <FormattedMessage id='examples.subtitle' />
+          </Subtitle>
+          <CreateSiteButton size='lg'>
+            <FormattedMessage id='button.create_site' />
+          </CreateSiteButton>
         </Info>
       </Container>
     </Wrapper>

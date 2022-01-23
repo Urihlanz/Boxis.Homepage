@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import { NavLink } from './styles';
 
@@ -8,7 +9,9 @@ type Props = {
 };
 
 const Item: React.FC<Props> = ({ title, link }) => (
-  <NavLink href={link}>{title}</NavLink>
+  <NavLink href={link}>
+    <FormattedMessage id={title} />
+  </NavLink>
 );
 
 export default Item;

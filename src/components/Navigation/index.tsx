@@ -10,19 +10,19 @@ type Link = {
 
 const links: Link[] = [
   {
-    title: 'О конструкторе',
+    title: 'navigation.about_constructor',
     link: '#',
   },
   {
-    title: 'Тарифы',
+    title: 'navigation.tariffs',
     link: '#',
   },
   {
-    title: 'Отзывы',
+    title: 'navigation.reviews',
     link: '#',
   },
   {
-    title: 'Портфолио',
+    title: 'navigation.example',
     link: '#',
   },
 ];
@@ -30,7 +30,7 @@ const links: Link[] = [
 const Navigation: React.FC = () => (
   <Navbar>
     {links.map((props: Link, index) => (
-      <Item link={props.link} title={props.title} key={index} />
+      <Item key={index} link={props.link} title={props.title} />
     ))}
   </Navbar>
 );
