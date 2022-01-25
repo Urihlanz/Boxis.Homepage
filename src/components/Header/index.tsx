@@ -23,7 +23,6 @@ const Header: React.FC = () => {
   const onBurgerMenuClick = () => {
     setIsShow((prev) => !prev);
   };
-
   const onCloseLoginModal = useCallback(() => {
     setIsShowLoginModal(false);
   }, []);
@@ -59,7 +58,7 @@ const Header: React.FC = () => {
           <BurgerMenuIcon width={24} height={24} onClick={onBurgerMenuClick} />
         </ButtonsRow>
       </Container>
-      <BurgerMenu isShow={isShow} />
+      <BurgerMenu isShow={isShow} isShowHandler={setIsShow} />
       <LoginModal
         isShow={isShowLoginModal}
         onClose={onCloseLoginModal}
