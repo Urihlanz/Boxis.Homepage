@@ -58,7 +58,7 @@ const Header: React.FC = () => {
           <BurgerMenuIcon width={24} height={24} onClick={onBurgerMenuClick} />
         </ButtonsRow>
       </Container>
-      <BurgerMenu isShow={isShow} isShowHandler={setIsShow} />
+      <BurgerMenu isShow={isShow} setIsShow={setIsShow} />
       <LoginModal
         isShow={isShowLoginModal}
         onClose={onCloseLoginModal}

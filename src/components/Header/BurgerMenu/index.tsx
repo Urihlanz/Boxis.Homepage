@@ -6,14 +6,14 @@ import { Wrapper } from './styles';
 
 type Props = {
   isShow: boolean;
-  isShowHandler: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsShow: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const BurgerMenu: React.FC<Props> = ({ isShow, isShowHandler }) => {
+const BurgerMenu: React.FC<Props> = ({ isShow, setIsShow }) => {
   const burgerMenuRef = useRef(null);
 
   const onCloseBurgerMenu = () => {
-    isShowHandler(false);
+    setIsShow(false);
   };
 
   useOutsideClick(burgerMenuRef, onCloseBurgerMenu);
