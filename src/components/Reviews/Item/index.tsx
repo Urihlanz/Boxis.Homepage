@@ -1,5 +1,6 @@
 import React from 'react';
 
+import truncate from '../../../utils/truncate';
 import { Image } from '../../styles';
 import {
   Avatar,
@@ -34,7 +35,7 @@ const Item: React.FC<Props> = ({ userAvatar, userName, date, text }) => (
         <CreationDate>{date}</CreationDate>
       </PersonInfo>
     </Header>
-    <Body>{text}</Body>
+    <Body>{truncate(text, 214)}</Body>
   </Wrapper>
 );
 

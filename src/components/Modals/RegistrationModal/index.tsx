@@ -1,4 +1,4 @@
-import { Modal, ValidationRule } from 'boxis-uikit';
+import { FormSubmitArguments, Modal, ValidationRule } from 'boxis-uikit';
 import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 
@@ -30,7 +30,9 @@ const RegistrationModal: React.FC<Props> = ({ isShow, onClose, onSwitch }) => {
   return (
     <Modal onClose={onClose} isShow={isShow}>
       <RegistrationForm
-        onSubmit={({ values, formData }) => console.log(values, formData)}
+        onSubmit={({ values, formData }: FormSubmitArguments) =>
+          console.log(values, formData)
+        }
       >
         <Title>
           <FormattedMessage id='registration_modal.title' />

@@ -12,7 +12,7 @@
   },
   "author": "Maxim Serebryakov <starkmp.work@gmail.com>",
   "dependencies": {
-    "boxis-uikit": "^1.2.5",
+    "boxis-uikit": "^1.2.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-intl": "^5.24.1",

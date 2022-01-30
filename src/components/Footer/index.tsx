@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import Logo from '../Logo';
 import Navigation from '../Navigation';
@@ -25,16 +26,28 @@ const Footer: React.FC = () => (
       <NavbarWrapper>
         <Logo width={127} height={35} light={true} />
         <Navigation />
-        <CreateSiteButton size='md'>Создать сайт</CreateSiteButton>
+        <CreateSiteButton size='md'>
+          <FormattedMessage id='button.create_site' />
+        </CreateSiteButton>
       </NavbarWrapper>
       <LinksRow>
-        <Copyright>с 2020 Все права защищены</Copyright>
+        <Copyright>
+          <FormattedMessage id='footer.copyright' />
+        </Copyright>
         <Links>
           <LegalLinks>
-            <LegalLink href='#'>Оплата</LegalLink>
-            <LegalLink href='#'>Условия</LegalLink>
-            <LegalLink href='#'>Политика</LegalLink>
-            <LegalLink href='#'>FAQ</LegalLink>
+            <LegalLink href='#'>
+              <FormattedMessage id='footer.legal_links.1' />
+            </LegalLink>
+            <LegalLink href='#'>
+              <FormattedMessage id='footer.legal_links.2' />
+            </LegalLink>
+            <LegalLink href='#'>
+              <FormattedMessage id='footer.legal_links.3' />
+            </LegalLink>
+            <LegalLink href='#'>
+              <FormattedMessage id='footer.legal_links.4' />
+            </LegalLink>
           </LegalLinks>
           <SocialLinksRow>
             <SocialLink href='#'>

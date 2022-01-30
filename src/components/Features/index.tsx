@@ -1,8 +1,9 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import { Image } from '../styles';
 import AutoOrderIcon from './AutoOrderIcon';
-import ExampleSite from './images/exampleSite.jpg';
+import ExampleSite from './images/exampleSite.png';
 import OnlinePayIcon from './OnlinePayIcon';
 import PieChartIcon from './PieChartIcon';
 import SafetyIcon from './SafetyIcon';
@@ -29,9 +30,11 @@ const Features: React.FC = () => (
     <Container>
       <TrustUsBlock />
       <Text>
-        <Title>Функции и врзможности конструктора</Title>
+        <Title>
+          <FormattedMessage id='features.title' />
+        </Title>
         <Subtitle>
-          Начните принимать заказы уже через несколько минут после регистрации
+          <FormattedMessage id='features.subtitle' />
         </Subtitle>
       </Text>
       <Content>
@@ -46,40 +49,44 @@ const Features: React.FC = () => (
             <AutoOrderIconSquare>
               <AutoOrderIcon width={22} height={22} />
             </AutoOrderIconSquare>
-            <FeatureTitle>Автоматизация заказов</FeatureTitle>
+            <FeatureTitle>
+              <FormattedMessage id='features.feature_1.title' />
+            </FeatureTitle>
             <FeatureText>
-              Начните принимать заказы уже через несколько минут после
-              регистрации
+              <FormattedMessage id='features.feature_1.subtitle' />
             </FeatureText>
           </Feature>
           <Feature>
             <PieChartIconSquare>
               <PieChartIcon width={26} height={26} />
             </PieChartIconSquare>
-            <FeatureTitle>Аналитика и статистика</FeatureTitle>
+            <FeatureTitle>
+              <FormattedMessage id='features.feature_2.title' />
+            </FeatureTitle>
             <FeatureText>
-              Начните принимать заказы уже через несколько минут после
-              регистрации
+              <FormattedMessage id='features.feature_2.subtitle' />
             </FeatureText>
           </Feature>
           <Feature>
             <OnlinePayIconSquare>
               <OnlinePayIcon width={26} height={26} />
             </OnlinePayIconSquare>
-            <FeatureTitle>Прием платежей онлайн</FeatureTitle>
+            <FeatureTitle>
+              <FormattedMessage id='features.feature_3.title' />
+            </FeatureTitle>
             <FeatureText>
-              Начните принимать заказы уже через несколько минут после
-              регистрации
+              <FormattedMessage id='features.feature_3.subtitle' />
             </FeatureText>
           </Feature>
           <Feature>
             <SafetyIconSquare>
               <SafetyIcon width={26} height={26} />
             </SafetyIconSquare>
-            <FeatureTitle>Безопасно и надежна</FeatureTitle>
+            <FeatureTitle>
+              <FormattedMessage id='features.feature_4.title' />
+            </FeatureTitle>
             <FeatureText>
-              Начните принимать заказы уже через несколько минут после
-              регистрации
+              <FormattedMessage id='features.feature_4.subtitle' />
             </FeatureText>
           </Feature>
         </OurFeatures>
