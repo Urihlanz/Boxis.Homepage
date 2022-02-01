@@ -14,6 +14,10 @@ export const Wrapper = styled.div<{ isShow: boolean }>`
   overflow: hidden;
   transition: right 0.3s;
   z-index: 10;
+
+  @media(min-width: 930px) {
+    display: none;
+  }
   
   ${(props) =>
     props.isShow &&
