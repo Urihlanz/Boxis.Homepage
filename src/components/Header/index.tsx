@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { FormattedMessage } from 'react-intl';
 
 import LoginModal from '../Modals/LoginModal';
@@ -19,6 +19,20 @@ const Header: React.FC = () => {
   const [isShow, setIsShow] = useState(false);
   const [isShowLoginModal, setIsShowLoginModal] = useState(false);
   const [isShowRegistrationModal, setIsShowRegistrationModal] = useState(false);
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search);
+    const loginQuery = queryParams.get('login');
+    const registrationQuery = queryParams.get('registration');
+
+    if (loginQuery === 'true') {
+      onOpenLoginModal();
+    }
+
+    if (registrationQuery === 'true') {
+      onOpenRegistrationModal();
+    }
+  }, []);
 
   const onBurgerMenuClick = () => {
     setIsShow((prev) => !prev);
