@@ -13,8 +13,6 @@ import {
   Info,
   LaptopBlock,
   LaptopImage,
-  Point,
-  PointListRow,
   SlideButton,
   Subtitle,
   Title,
@@ -69,11 +67,6 @@ const Examples: React.FC = () => {
           </LaptopImage>
           <TopGrid />
           <BottomGrid />
-          <PointListRow>
-            <Point isActive={category === Categories.Business} />
-            <Point isActive={category === Categories.Shop} />
-            <Point isActive={category === Categories.More} />
-          </PointListRow>
           <ButtonsRow>
             <SlideButton
               isActive={category === Categories.Business}
