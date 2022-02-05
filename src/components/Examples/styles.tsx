@@ -171,7 +171,7 @@ export const ExampleImage = styled.div`
 
 export const ButtonsRow = styled.div`
   display: flex;
-  margin-top: 86px;
+  margin-top: 50px;
 
   @media (max-width: 1030px) {
     margin-top: 28px;
@@ -205,35 +205,4 @@ export const SlideButton = styled.button<{ isActive: boolean }>`
     margin-right: 0;
     font-size: 14px;
   }
-`;
-
-export const PointListRow = styled.div`
-  display: none;
-
-  @media (max-width: 1250px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 5px;
-    margin-top: 13px;
-  }
-`;
-
-export const Point = styled.div<{ isActive: boolean }>`
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #c4c4c4;
-  margin-right: 5px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  ${(props) =>
-    props.isActive &&
-    `
-    background-color: #F4566F;
-  `}
 `;
