@@ -4,7 +4,7 @@ export const Navbar = styled.nav`
   display: flex;
   align-items: center;
 
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 34px;

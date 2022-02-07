@@ -9,6 +9,7 @@ import {
   BurgerMenuIcon,
   ButtonsRow,
   Container,
+  LanguageSelectMenu,
   LoginButton,
   RegistrationButton,
   StyledLogo,
@@ -56,6 +57,7 @@ const Header: React.FC = () => {
           <LoginButton size='sm' onClick={onOpenLoginModal}>
             <FormattedMessage id='button.login' />
           </LoginButton>
+          <LanguageSelectMenu />
           <BurgerMenuIcon width={24} height={24} onClick={onBurgerMenuClick} />
         </ButtonsRow>
       </Container>

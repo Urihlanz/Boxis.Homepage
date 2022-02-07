@@ -4,8 +4,8 @@ import { Image } from '../styles';
 import PeopleCircles from './images/peopleCircles.png';
 import { CounterValue, CounterWrapper, Title, Wrapper } from './styled';
 
-const TrustUs: React.FC<{ className?: string }> = ({ className }) => (
-  <Wrapper className={className}>
+const TrustUs: React.FC = () => (
+  <Wrapper>
     <Title>Нам доверяют</Title>
     <CounterWrapper>
       <Image

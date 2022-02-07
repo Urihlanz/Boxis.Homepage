@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
+import { overrideStyled } from '../../../utils/styled';
+import LanguageSelect from '../LanguageSelect';
+
 export const Wrapper = styled.div<{ isShow: boolean }>`
   display: flex;
   flex-direction: column;
@@ -20,5 +23,33 @@ export const Wrapper = styled.div<{ isShow: boolean }>`
     `
     right: 0;
   `}
+  }
+
+  nav {
+    margin-top: 0;
+  }
+`;
+
+export const LanguageSelectMenu = overrideStyled(LanguageSelect)`
+  .ui-select__btn {
+    background: none;
+    width: unset;
+    padding: 0;
+  }
+
+  .ui-select__arrow {
+    right: 1px;
+  }
+
+  .ui-select__arrow path {
+    color: #fff;
+  }
+
+  .ui-select__value {
+    display: none;
+  }
+
+  .ui-select__list {
+    width: 185px;
   }
 `;

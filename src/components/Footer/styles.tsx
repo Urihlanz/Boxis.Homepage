@@ -13,7 +13,7 @@ export const Wrapper = styled.footer`
   padding: 87px 0 81px 0;
   width: 100%;
 
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
     padding: 39px 0 37px 0;
   }
 `;
@@ -39,7 +39,7 @@ export const NavbarWrapper = styled.div`
     padding: 0 17px 34px 17px;
   }
 
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
     flex-direction: column;
     align-items: flex-start;
     padding: 0 17px 34px 17px;
@@ -51,7 +51,7 @@ export const CreateSiteButton = overrideStyled(Button)`
   padding: 0 32px;
   font-size: 14px;
 
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
     margin-top: 34px;
     height: 36px;
     padding: 0 18px;
@@ -81,7 +81,7 @@ export const Copyright = styled.p`
   font-size: 14px;
   color: #939393;
 
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
     order: 3;
   }
 `;
@@ -89,7 +89,7 @@ export const Copyright = styled.p`
 export const Links = styled.div`
   display: flex;
 
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
     flex-direction: column;
   }
 `;
@@ -100,7 +100,7 @@ export const LegalLinks = styled.div`
   margin-right: 63px;
   flex-wrap: wrap;
 
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
     margin-bottom: 23px;
     margin-right: 0;
   }
@@ -113,14 +113,14 @@ export const LegalLink = styled.a`
   font-size: 14px;
   line-height: 27px;
 
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
     margin-right: 30px;
   }
 
   &:last-child {
     margin-right: 0;
 
-    @media (max-width: 930px) {
+    @media (max-width: 1030px) {
       margin-right: 0;
     }
   }
@@ -129,7 +129,7 @@ export const LegalLink = styled.a`
 export const SocialLinksRow = styled.div`
   display: flex;
 
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
     margin-bottom: 23px;
   }
 `;

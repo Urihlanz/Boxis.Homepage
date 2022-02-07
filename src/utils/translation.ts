@@ -1,10 +1,12 @@
 import locales from '../translations';
+import unstranslatable from '../translations/untranslatable.json';
 
 export const defaultLocale = 'ru';
 
 export const getTranslations = (locale: string): Record<string, string> => ({
   ...locales[defaultLocale],
   ...locales[locale],
+  ...unstranslatable,
 });
 
 export const hasLocale = () => !!localStorage.getItem('locale');

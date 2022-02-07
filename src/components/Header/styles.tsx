@@ -6,6 +6,7 @@ import Logo from '../Logo';
 import { Navbar } from '../Navigation/styles';
 import { Container as MainContainer } from '../styles';
 import BurgerIcon from './BurgerIcon';
+import LanguageSelect from './LanguageSelect';
 
 export const Wrapper = styled.header`
   display: flex;
@@ -18,7 +19,7 @@ export const Wrapper = styled.header`
   border-bottom: 2px rgba(0, 0, 0, 0.1) solid;
   z-index: 10;
 
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
     height: 65px;
     border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
   }
@@ -30,13 +31,13 @@ export const Container = styled(MainContainer)`
   justify-content: space-between;
 
   ${Navbar} {
-    @media (max-width: 930px) {
+    @media (max-width: 1030px) {
       display: none;
     }
   }
 
   .header-logo {
-    @media (max-width: 930px) {
+    @media (max-width: 1030px) {
       width: 70px;
       height: 19px;
     }
@@ -44,7 +45,7 @@ export const Container = styled(MainContainer)`
 `;
 
 export const StyledLogo = styled(Logo)`
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
     width: 70px;
     height: 19px;
   }
@@ -58,7 +59,7 @@ export const ButtonsRow = styled.div`
 export const BurgerMenuIcon = styled(BurgerIcon)`
   display: none;
 
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
     display: inline-block;
   }
 `;
@@ -70,7 +71,7 @@ export const RegistrationButton = overrideStyled(Button)`
     color: #1E1E1E;
   }
 
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
     margin-right: 11px;
     font-size: 12px;
     height: 26px;
@@ -81,10 +82,18 @@ export const RegistrationButton = overrideStyled(Button)`
 export const LoginButton = overrideStyled(Button)`
   font-size: 16px;
 
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
     padding: 0 16px;
     height: 26px;
     margin-right: 14px;
     font-size: 12px;
+  }
+`;
+
+export const LanguageSelectMenu = overrideStyled(LanguageSelect)`
+  margin-left: 14px;
+
+  @media(max-width: 1030px) {
+    display: none;
   }
 `;

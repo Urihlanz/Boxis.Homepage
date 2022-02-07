@@ -8,7 +8,7 @@ export const NavLink = styled.a`
     margin-right: 0;
   }
 
-  @media (max-width: 930px) {
+  @media (max-width: 1030px) {
     margin-bottom: 16px;
     color: #fff;
 
