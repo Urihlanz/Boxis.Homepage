@@ -1,25 +1,15 @@
-import { useOutsideClick } from 'boxis-uikit';
-import React, { useRef } from 'react';
+import React from 'react';
 
 import Navigation from '../../Navigation';
 import { Wrapper } from './styles';
 
 type Props = {
   isShow: boolean;
-  setIsShow: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const BurgerMenu: React.FC<Props> = ({ isShow, setIsShow }) => {
-  const burgerMenuRef = useRef(null);
-
-  const onCloseBurgerMenu = () => {
-    setIsShow(false);
-  };
-
-  useOutsideClick(burgerMenuRef, onCloseBurgerMenu);
-
+const BurgerMenu: React.FC<Props> = ({ isShow }) => {
   return (
-    <Wrapper isShow={isShow} ref={burgerMenuRef}>
+    <Wrapper isShow={isShow}>
       <Navigation />
     </Wrapper>
   );
