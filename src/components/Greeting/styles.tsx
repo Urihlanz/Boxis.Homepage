@@ -42,8 +42,13 @@ export const Info = styled.div`
   flex-direction: column;
   width: 57%;
 
-  @media (max-width: 930px) {
+  @media (max-width: 560px) {
     width: 100%;
+  }
+
+  @media (min-width: 560px) and (max-width: 930px) {
+    width: 100%;
+    align-items: center;
   }
 `;
 
@@ -56,6 +61,10 @@ export const Title = styled.h1`
     margin-bottom: 25px;
     font-size: 32px;
     line-height: 35px;
+  }
+
+  @media (min-width: 560px) and (max-width: 930px) {
+    text-align: center;
   }
 `;
 
@@ -71,6 +80,10 @@ export const Subtitle = styled.h2`
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 15px;
+  }
+
+  @media (min-width: 560px) and (max-width: 930px) {
+    text-align: center;
   }
 `;
 
