@@ -1,4 +1,5 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import { useOutsideClick } from 'boxis-uikit';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { FormattedMessage } from 'react-intl';
 
 import LoginModal from '../Modals/LoginModal';
@@ -16,7 +17,7 @@ import {
 } from './styles';
 
 const Header: React.FC = () => {
-  const [isShow, setIsShow] = useState(false);
+  const [isShowBurgerMenu, setIsShowBurgerMenu] = useState(false);
   const [isShowLoginModal, setIsShowLoginModal] = useState(false);
   const [isShowRegistrationModal, setIsShowRegistrationModal] = useState(false);
 
@@ -34,9 +35,12 @@ const Header: React.FC = () => {
     }
   }, []);
 
-  const onBurgerMenuClick = () => {
-    setIsShow((prev) => !prev);
-  };
+  const ref = useRef(null);
+
+  useOutsideClick(ref, () => {
+    setIsShowBurgerMenu(false);
+  });
+
   const onCloseLoginModal = useCallback(() => {
     setIsShowLoginModal(false);
   }, []);
@@ -54,7 +58,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <Wrapper>
+    <Wrapper ref={ref}>
       <Container>
         <StyledLogo width={127} height={35} />
         <Navigation />
@@ -69,10 +73,14 @@ const Header: React.FC = () => {
           <LoginButton size='sm' onClick={onOpenLoginModal}>
             <FormattedMessage id='button.login' />
           </LoginButton>
-          <BurgerMenuIcon width={24} height={24} onClick={onBurgerMenuClick} />
+          <BurgerMenuIcon
+            width={24}
+            height={24}
+            onClick={() => setIsShowBurgerMenu((prev) => !prev)}
+          />
         </ButtonsRow>
       </Container>
-      <BurgerMenu isShow={isShow} setIsShow={setIsShow} />
+      <BurgerMenu isShow={isShowBurgerMenu} />
       <LoginModal
         isShow={isShowLoginModal}
         onClose={onCloseLoginModal}
