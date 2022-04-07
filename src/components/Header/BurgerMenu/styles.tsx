@@ -17,17 +17,12 @@ export const Wrapper = styled.div<{ isShow: boolean }>`
   overflow: hidden;
   transition: right 0.3s;
   z-index: 10;
-  
+
   ${(props) =>
     props.isShow &&
     `
     right: 0;
   `}
-  }
-
-  nav {
-    margin-top: 0;
-  }
 `;
 
 export const LanguageSelectMenu = overrideStyled(LanguageSelect)`

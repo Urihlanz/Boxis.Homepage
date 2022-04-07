@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { overrideStyled } from '../../utils/styled';
 import { NavLink } from '../Navigation/Item/styles';
+import { Navbar } from '../Navigation/styles';
 import { Container as MainContainer } from '../styles';
 
 export const Wrapper = styled.footer`
@@ -33,6 +34,10 @@ export const NavbarWrapper = styled.div`
 
   ${NavLink} {
     color: #fff;
+  }
+
+  ${Navbar} {
+    margin-top: 34px;
   }
 
   @media (max-width: 1220px) {
